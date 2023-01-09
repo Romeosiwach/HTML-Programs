@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Image Example</title>
+</head>
+
+<body>
+    <img src="z.png" alt="Nature img" id="Sample" width="800px" height="auto">
+    <br>
+    <button onclick="FirstImage();">Change Image Dynamically</button>
+    <button onclick="SecondImage();">Change Image Second</button>
+    <script type="text/javascript">
+        function FirstImage() {
+            document.getElementById("Sample").src = "England.png";
+        }
+        function SecondImage() {
+            document.getElementById("Sample").src = "z.png";
+        }
+    </script>
+</body>
+
+</html>
